@@ -145,7 +145,7 @@ const CallUI = ({ callId, token, apiKey, currentUser, booking, isInterviewer, on
               </button>
   
               {/* AI Questions tab — interviewer only */}
-              {true && (
+              {isInterviewer && (
                 <button
                   type="button"
                   onClick={() => setActiveTab("ai")}
