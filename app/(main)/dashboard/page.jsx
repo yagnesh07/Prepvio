@@ -1,5 +1,5 @@
 import React from 'react'
-import { getAvailability, getInterviewerAppointments, getInterviewerStats } from '@/actions/dashboard';
+import { getAvailability, getInterviewerAppointments, getInterviewerStats, getWithdrawalHistory } from '@/actions/dashboard';
 import { getCurrentUser } from '@/actions/user';
 import { currentUser } from '@clerk/nextjs/server';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -21,9 +21,7 @@ const InterviewerDashboardPage = async () => {
         getAvailability(),
         getInterviewerAppointments(),
         getInterviewerStats(),
-  
-        // Assignment
-        // getWithdrawalHistory(),
+        getWithdrawalHistory(),
       ]);
   
     return (

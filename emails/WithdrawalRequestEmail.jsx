@@ -34,7 +34,7 @@ import {
             <Text
               style={{ fontSize: "22px", color: "#111827", margin: "0 0 4px" }}
             >
-              MockMate
+              Prepvio
             </Text>
             <Text
               style={{
